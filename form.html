@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>pesquisa socio economica</title>
+    <link rel="stylesheet" href="form.css">
+</head>
+<body>
+<!-- dados da pessoa da pesquisa-->
+  <div class="inic">
+    <label for="nome">Nome:</label>
+    <input id="nome" type="text" placeholder="Nome completo">
+
+    <label for="cpf">CPF: </label> 
+    <input id="cpf" type="text" pattern="\d{3}\.\d{3}\.\d{3}-\d{2}" name="cpf" placeholder="Digite seu CPF" title="Formato: 000.000.000-00"> 
+    
+    <label for="telefone">Telefone: </label>
+    <input id="telefone" type="tel" placeholder="digite seu telefone" pattern="\d{0}\(\d{2}\)\d{5}-\d{4}" title="Formato: (00)00000-0000">
+   
+    <label for="email">Email: </label>
+    <input id="email" type="email"  placeholder="digite seu email">
+     
+  <div class="sapaco">
+    <label for="idade">Idade</label>
+    <input id="idade" type="range" min="12" max="122" value="35" oninput="this.nextElementSibling.value = this.value">
+    <output>35</output>
+  </div>
+  </div>      
+
+
+  <!-- ganh mensal -->
+  <div class="sapaco">
+    <label for="ganho_mensal">Qual é o ganho mensal da sua familia?</label>
+  </div>  
+
+    <div class="radio">
+       <input id="min_mil" type="radio" name="ganho_mensal">
+       <label for="men_mil">Menos de 1000</label>
+    </div>
+
+    <div class="radio">
+        <input id="mais_mil" type="radio" name="ganho_mensal">
+        <label for="mais_mil">Entre 1.000 e 3.000</label>
+    </div>
+
+    <div class="radio">
+        <input id="mais_trmil" type="radio" name="ganho_mensal">
+        <label for="mais_trmil">Entre 3.000 e 7.000</label>
+    </div>
+
+    <div class="radio">
+        <input id="mais_stmil" type="radio" name="ganho_mensal">
+        <label for="mais_stmil">Entre 7.000 e 15.000</label>
+    </div>
+
+    <div class="radio">
+        <input id="mais_quimil" type="radio" name="ganho_mensal">
+        <label for="mais_quimil">Mais de 15.000</label>
+    </div>
+
+   
+
+  <div class="sapaco">
+    <label>Dos itens abaixo, selecione os que tem na sua casa</label>
+  </div>
+    <div class="checkbox" >      
+        <input id="tv" type="checkbox">
+        <label for="tv">Televisão</label>
+          
+        <input id="geladeira" type="checkbox">
+        <label for="geladeira">Geladeira</label>
+          
+        <input id="freezer" type="checkbox">
+        <label for="freezer">Freezer</label>
+          
+        <input id="computador" type="checkbox">
+        <label for="computador">Computador</label>
+          
+        <input id="micronda" type="checkbox">
+        <label for="micronda">Microondas</label>
+     
+        <input id="forno" type="checkbox">
+        <label for="forno">Forno</label>
+    </div>
+  <select form="" aria-placeholder="qnt">
+
+
+
+  </select>
+</body>
+</html>
