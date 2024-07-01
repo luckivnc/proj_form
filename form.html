@@ -8,15 +8,17 @@
 </head>
 <body>
 <!-- dados da pessoa da pesquisa-->
+
+<h1>formulario de pesquisa socio ecomomico</h1>
   <div class="inic">
     <label for="nome">Nome:</label>
     <input id="nome" type="text" placeholder="Nome completo">
 
     <label for="cpf">CPF: </label> 
-    <input id="cpf" type="text" pattern="\d{3}\.\d{3}\.\d{3}-\d{2}" name="cpf" placeholder="Digite seu CPF" title="Formato: 000.000.000-00"> 
+    <input id="cpf" type="text" pattern="\d{3}\.\d{3}\.\d{3}-\d{2}" name="cpf" placeholder="000.000.000-00" title="Formato: 000.000.000-00" maxlength="11"> 
     
     <label for="telefone">Telefone: </label>
-    <input id="telefone" type="tel" placeholder="digite seu telefone" pattern="\d{0}\(\d{2}\)\d{5}-\d{4}" title="Formato: (00)00000-0000">
+    <input id="telefone" type="tel" placeholder="(00)00000-0000" pattern="\d{0}\(\d{2}\)\d{5}-\d{4}" title="Formato: (00)00000-0000">
    
     <label for="email">Email: </label>
     <input id="email" type="email"  placeholder="digite seu email">
@@ -64,24 +66,31 @@
   <div class="sapaco">
     <label>Dos itens abaixo, selecione os que tem na sua casa</label>
   </div>
-    <div class="checkbox" >      
+    <div class="checkbox" >   
+      <div class="flexorgn">   
         <input id="tv" type="checkbox">
         <label for="tv">Televisão</label>
-          
+      </div>
+      <div class="flexorgn" >   
         <input id="geladeira" type="checkbox">
         <label for="geladeira">Geladeira</label>
-          
+      </div>
+      <div class="flexorgn" >   
         <input id="freezer" type="checkbox">
         <label for="freezer">Freezer</label>
-          
+      </div>  
+      <div class="flexorgn" >   
         <input id="computador" type="checkbox">
         <label for="computador">Computador</label>
-          
+      </div> 
+      <div class="flexorgn" >   
         <input id="micronda" type="checkbox">
         <label for="micronda">Microondas</label>
-     
+      </div> 
+      <div class="flexorgn" >
         <input id="forno" type="checkbox">
         <label for="forno">Forno</label>
+      </div>
     </div>
   <select form="" aria-placeholder="qnt">
 
