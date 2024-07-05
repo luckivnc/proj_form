@@ -3,25 +3,27 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>pesquisa socio economica</title>
     <link rel="stylesheet" href="form.css">
+    <script src="form.js"></script>
+    <title>pesquisa socio economica</title>
 </head>
 <body>
-<!-- dados da pessoa da pesquisa-->
+<!-- textarea -->
 
+<!-- dados da pessoa da pesquisa-->
 <h1>Formulario de pesquisa Socio Ecomomico</h1>
   <div class="inic">
     <label for="nome">Nome:</label>
-    <input id="nome" type="text" placeholder="Nome completo">
+    <input class="input_text" id="nome" type="text"  placeholder="Nome completo">
 
     <label for="cpf">CPF: </label> 
-    <input id="cpf" type="text" pattern="\d{3}\.\d{3}\.\d{3}-\d{2}" name="cpf" placeholder="000.000.000-00" title="Formato: 000.000.000-00" maxlength="11"> 
+    <input class="input_text" id="cpf" type="text"  pattern="\d{3}\.\d{3}\.\d{3}-\d{2}" name="cpf" placeholder="000.000.000-00" title="Formato: 000.000.000-00" maxlength="14"> 
     
     <label for="telefone">Telefone: </label>
-    <input id="telefone" type="tel" placeholder="(00)00000-0000" pattern="\d{0}\(\d{2}\)\d{5}-\d{4}" title="Formato: (00)00000-0000">
+    <input class="input_text" id="telefone" type="tel" placeholder="(00)00000-0000" pattern="\d{0}\(\d{2}\)\d{5}-\d{4}" title="Formato: (00)00000-0000" maxlength="14">
    
     <label for="email">Email: </label>
-    <input id="email" type="email"  placeholder="digite seu email">
+    <input class="input_text" id="email" type="email"  placeholder="digite seu email">
      
   <div class="sapaco">
     <label for="idade">Idade</label>
@@ -37,7 +39,7 @@
   </div>  
 
     <div class="radio">
-       <input id="min_mil" type="radio" name="ganho_mensal">
+       <input id="men_mil" type="radio" name="ganho_mensal">
        <label for="men_mil">Menos de 1000</label>
     </div>
 
@@ -92,10 +94,15 @@
         <label for="forno">Forno</label>
       </div>
     </div>
+
 <!-- botão que vai salvar as infomaçôes  -->
     <div class="sapaco">
-      <button id="enviar">Enviar</button>
+      <button type="button" onclick="enviar()">Enviar</button>
     </div>
-<script src="form.js"></script>
+
+
+    
+
+
 </body>
 </html>
