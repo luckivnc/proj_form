@@ -8,6 +8,6 @@
 
 ![imagem do site](image.png)
 
-<p> escolhi fazerr um formulario socio economico por poder aprender mais das propriedades de input por ter mais tipos de dados necessarios</p>
+<p> escolhi fazer um formulario socio economico por poder aprender mais das propriedades de input por ter mais tipos de dados necessarios</p>
 
-##### falta adicionar js 
+
